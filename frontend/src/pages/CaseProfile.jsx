@@ -62,10 +62,38 @@ function CaseProfile() {
 
   return (
     <div>
-      <form action="/api/records" method="post" enctype="multipart/form-data">
-        <label for="file">File</label>
-        <input id="file" name="file" type="file" />
-        <button className="button-74">Dodaj privitak nalazu</button>
+      <form action="/records/:id" method="POST" enctype="multipart/form-data">
+        <div>
+          <label for="name">Naziv nalaza</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Name"
+            value=""
+            name="Naziv nalaza"
+            required
+          />
+        </div>
+        <div>
+          <label for="desc">Opis nalaza</label>
+          <textarea
+            id="desc"
+            name="desc"
+            value=""
+            rows="2"
+            placeholder="Opis"
+            required
+          ></textarea>
+        </div>
+        <div>
+          <label for="image">Privitak</label>
+          <input type="file" id="image" name="image" value="" required />
+        </div>
+        <div>
+          <button className="button-74manji" type="submit">
+            Potvrdi
+          </button>
+        </div>
       </form>
       <table className="table-wrapper" style={{ marginTop: 40 }}>
         <thead>
