@@ -65,7 +65,7 @@ function CaseProfile() {
       <form action="/api/records" method="post" enctype="multipart/form-data">
         <label for="file">File</label>
         <input id="file" name="file" type="file" />
-        <button className="button-74">Privitak nalaza</button>
+        <button className="button-74">Dodaj privitak nalazu</button>
       </form>
       <table className="table-wrapper" style={{ marginTop: 40 }}>
         <thead>
